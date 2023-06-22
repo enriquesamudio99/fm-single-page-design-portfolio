@@ -505,7 +505,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: .9375rem;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -ms-overflow-style: none;
