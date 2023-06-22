@@ -447,7 +447,7 @@ h1 {
     color: var(--clr-medium-brown);
 }
 
-@media (width >= 768px) {
+@media (width >= 1200px) {
     .about__text {
         margin-top: 2.125rem;
     }
@@ -548,13 +548,17 @@ h1 {
 }
 
 .works__options {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 1rem;
-    /* Quitar */
-    margin-bottom: 2.5rem; 
+}
+
+@media (width >= 768px) {
+    .works__options {
+        margin-top: 3.5rem;
+    }
 }
 
 .works__option {
@@ -570,4 +574,127 @@ h1 {
 
 .works__option:hover {
     background-color: var(--clr-galactic-blue);
+}
+
+/* CTA */
+.cta {
+    margin-top: 6.25rem;
+}
+
+@media (width >= 768px) {
+    .cta {
+        margin-top: 7.5rem;
+    }
+}
+
+@media (width >= 1200px) {
+    .cta {
+        margin-top: 5.5rem;
+    }
+}
+
+.cta__container {
+    background-color: var(--clr-black);
+    color: var(--clr-light-cream);
+    padding: 3.0625rem 1.5rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+@media (width >= 768px) {
+    .cta__container {
+        padding: 3.5rem 4.6875rem 4rem;
+        row-gap: 1.625rem;
+    }
+}
+
+@media (width >= 1200px) {
+    .cta__container {
+        padding: 5.0625rem 5.9375rem 5rem 4.0625rem;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 0;
+    }
+}
+
+.cta__info {
+    text-align: center;
+}
+
+@media (width >= 1200px) {
+    .cta__info {
+        max-width: 540px;
+        text-align: left;
+    }
+}
+
+.cta__title {
+    font-size: var(--fs-heading-sm);
+    line-height: var(--lh-heading-sm);
+}
+
+@media (width >= 768px) {
+    .cta__title {
+        font-size: var(--fs-heading-md);
+        line-height: var(--lh-heading-md);
+    }
+}
+
+@media (width >= 1200px) {
+    .cta__title {
+        font-size: var(--fs-heading-xl);
+        line-height: var(--lh-heading-xl);
+    }
+}
+
+.cta__text {
+    margin-top: 1.5rem;
+}
+
+@media (width >= 768px) {
+    .cta__text {
+        margin-top: 1.625rem;
+    }
+}
+
+@media (width >= 1200px) {
+    .cta__text {
+        margin-top: 1.5625rem;
+    }
+}
+
+/* Footer */
+.footer {
+    margin: 2.5rem 0 2rem;
+}
+
+@media (width >= 768px) {
+    .footer {
+        margin: 3.5rem 0;
+    }
+}
+
+@media (width >= 1200px) {
+    .footer {
+        margin: 3.5rem 0 4rem;
+    }
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo-img {
+    width: 48px;
+}
+
+@media (width >= 768px) {
+    .footer__logo-img {
+        width: 64px;
+    }
 }
